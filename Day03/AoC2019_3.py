@@ -1,14 +1,11 @@
 import operator
 
-# reading input
+# read input
 with open("input.txt", "r") as file:
     A = [(s[0], int(s[1:])) for s in file.readline().split(',')]
     B = [(s[0], int(s[1:])) for s in file.readline().split(',')]
 
-# key: coordinates
-# value: number of steps
-wire1 = dict()
-
+# goes through coordinates of the wire
 def go(wire):
     x = y = steps = 0
     for move in wire:
@@ -26,16 +23,23 @@ def go(wire):
             steps += 1
             yield ((x, y), steps)
 
-for pos, steps in go(A):
-    if not pos in wire1:
-        wire1[pos] = steps
+# key: coordinates of the first wire
+# value: number of steps
+wireA = dict()
 
+# fill wireA dictionary
+for pos, steps in go(A):
+    if not pos in wireA:
+        wireA[pos] = steps
+
+# check for intersection between wires
 inter_dists = []
 inter_steps = []
 for pos, steps in go(B):
-    if pos in wire1:
+    if pos in wireA:
         inter_dists.append(abs(pos[0]) + abs(pos[1]))
-        inter_steps.append(wire1[pos] + steps)
+        inter_steps.append(wireA[pos] + steps)
 
+# output
 print("Part One:", min(inter_dists))
 print("Part Two:", min(inter_steps))
