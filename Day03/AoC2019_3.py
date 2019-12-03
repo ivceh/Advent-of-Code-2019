@@ -1,5 +1,3 @@
-import operator
-
 # read input
 with open("input.txt", "r") as file:
     A = [(s[0], int(s[1:])) for s in file.readline().split(',')]
