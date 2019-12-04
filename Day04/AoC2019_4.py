@@ -19,7 +19,6 @@ def is_non_increasing(it):
     return True
 
 part1 = part2 = 0
-sol = set()
 for n in range(a, b + 1):
     grouped = [(digit, sum(1 for _ in l))
                for digit, l in itertools.groupby(digits_backwards(n))]
@@ -28,13 +27,11 @@ for n in range(a, b + 1):
     rule2 = is_non_increasing(digit for digit, num in grouped)
     if rule1A and rule2:
         part1 += 1
-        sol.add(n)
         if rule1B:
             part2 += 1
 
 print("Part One", part1)
 print("Part Two", part2)
-print(len(sol))
 
 #solution 2
 def add_digit(n, digit):
@@ -75,10 +72,8 @@ for n in non_decreasing_digit_range(a, b + 1):
     rule1B = any(num == 2 for num in groups)
     if rule1A:
         part1 += 1
-        sol.remove(n)
         if rule1B:
             part2 += 1
-print(sol)
 
 print("Part One", part1)
 print("Part Two", part2)
