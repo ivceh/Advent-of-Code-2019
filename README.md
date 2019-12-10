@@ -5,7 +5,7 @@ Programming language: Python 3
 | Day | Task                                                                      | View Solution                                                             |
 | --- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | 01  | [The Tyranny of the Rocket Equation](https://adventofcode.com/2019/day/1) | [AoC2019_1.py](/Day01/AoC2019_1.py)                                       |
-| 02  | [1202 Program Alarms](https://adventofcode.com/2019/day/2)                | [AoC2019_2.py](/Day02/AoC2019_2.py)                                       |
+| 02  | [1202 Program Alarm](https://adventofcode.com/2019/day/2)                 | [AoC2019_2.py](/Day02/AoC2019_2.py)                                       |
 | 03  | [Crossed Wires](https://adventofcode.com/2019/day/3)                      | [AoC2019_3.py](/Day03/AoC2019_3.py)                                       |
 | 04  | [Secure Container](https://adventofcode.com/2019/day/4)                   | [AoC2019_4.py](/Day04/AoC2019_4.py)                                       |
 | 05  | [Sunny with a Chance of Asteroids](https://adventofcode.com/2019/day/5)   | [AoC2019_5.py](/Day05/AoC2019_5.py)                                       |
