@@ -1,18 +1,15 @@
+import sys
+import os
+sys.path.append(os.getcwd() + "/..")
+from Intcode_computer import *
+
 # function does not modify A
 def output(A, noun, verb):
-    B = A.copy()
-    B[1] = noun
-    B[2] = verb
-    pos = 0
-    while B[pos] != 99:
-        if B[pos] == 1:
-            B[B[pos + 3]] = B[B[pos + 1]] + B[B[pos + 2]]
-        elif A[pos] == 2:
-            B[B[pos + 3]] = B[B[pos + 1]] * B[B[pos + 2]]
-        else:
-            raise RuntimeError("Invalid opcode!")
-        pos += 4
-    return B[0]
+    p = program(A)
+    p.A[1] = noun
+    p.A[2] = verb
+    p.exec()
+    return p.A[0]
 
 # reading input
 with open("input.txt", "r") as file:
