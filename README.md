@@ -2,6 +2,8 @@
 
 Programming language: Python 3
 
+Two modules for help: [Geometry.py](/Geometry.py), [Intcode_computer.py](/Intcode_computer.py)
+
 | Day | Task                                                                      | View Solution                                                             |
 | --- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | 01  | [The Tyranny of the Rocket Equation](https://adventofcode.com/2019/day/1) | [AoC2019_1.py](/Day01/AoC2019_1.py)                                       |
@@ -14,3 +16,5 @@ Programming language: Python 3
 | 08  | [Space Image Format](https://adventofcode.com/2019/day/8)                 | [AoC2019_8.py](/Day08/AoC2019_8.py)                                       |
 | 09  | [Sensor Boost](https://adventofcode.com/2019/day/9)                       | [AoC2019_9.py](/Day09/AoC2019_9.py)                                       |
 | 10  | [Monitoring Station](https://adventofcode.com/2019/day/10)                | [AoC2019_10.py](/Day10/AoC2019_10.py)                                     |
+| 11  | [Space Police](https://adventofcode.com/2019/day/11)                      | [AoC2019_11.py](/Day11/AoC2019_11.py)                                     |
+| 12  | [The N-Body Problem](https://adventofcode.com/2019/day/12)                | [AoC2019_12.py](/Day12/AoC2019_12.py)                                     |
