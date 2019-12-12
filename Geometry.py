@@ -9,9 +9,9 @@ class Point2D(namedtuple("Point", ("x", "y"))):
 
 class Point3D(namedtuple("Point", ("x", "y", "z"))):
     def __add__(self, other):
-        return Point2D(self.x + other.x, self.y + other.y, self.z + other.z)
+        return Point3D(self.x + other.x, self.y + other.y, self.z + other.z)
     def __sub__(self, other):
-        return Point2D(self.x - other.x, self.y - other.y, self.z - other.z)
+        return Point3D(self.x - other.x, self.y - other.y, self.z - other.z)
 
 def dist_sqr(p, p2 = None):
     if p2 is None:
@@ -24,9 +24,6 @@ def norm1(p, p2 = None):
         return sum(abs(d) for d in p)
     else:
         return norm1(p2 - p)
-
-def dist1(p1, p2):
-    return norm1(p2 - p1)
 
 class Direction(IntEnum):
     up = 0
