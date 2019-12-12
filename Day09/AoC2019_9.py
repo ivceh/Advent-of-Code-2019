@@ -5,7 +5,7 @@ from Intcode_computer import *
 
 # reading input
 with open("input.txt", "r") as file:
-    A = {i: int(a) for i, a in enumerate(file.read().split(','))}
+    A = [int(a) for a in file.read().split(',')]
 
 print("Part 1:", end = " ")
 p = program(A, lambda: 1, lambda x: print(x))
