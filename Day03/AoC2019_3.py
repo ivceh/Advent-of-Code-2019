@@ -1,25 +1,22 @@
+import sys
+import os
+sys.path.append(os.getcwd() + "/..")
+from Geometry import *
+
 # read input
 with open("input.txt", "r") as file:
-    A = [(s[0], int(s[1:])) for s in file.readline().split(',')]
-    B = [(s[0], int(s[1:])) for s in file.readline().split(',')]
+    A = [(Direction(s[0]), int(s[1:])) for s in file.readline().split(',')]
+    B = [(Direction(s[0]), int(s[1:])) for s in file.readline().split(',')]
 
 # goes through coordinates of the wire
 def go(wire):
-    x = y = steps = 0
-    for move in wire:
-        for i in range(move[1]):
-            if move[0] == 'U':
-                y -= 1
-            elif move[0] == 'D':
-                y += 1
-            elif move[0] == 'L':
-                x -= 1
-            elif move[0] == 'R':
-                x += 1
-            else:
-                raise ValueError("Unknown direction!")
+    pos = Point2D(0, 0)
+    steps = 0
+    for direction, length in wire:
+        for i in range(length):
+            pos = move_point(pos, direction)
             steps += 1
-            yield ((x, y), steps)
+            yield (pos, steps)
 
 # key: coordinates of the first wire
 # value: number of steps
@@ -35,7 +32,7 @@ inter_dists = []
 inter_steps = []
 for pos, steps in go(B):
     if pos in wireA:
-        inter_dists.append(abs(pos[0]) + abs(pos[1]))
+        inter_dists.append(norm1(pos))
         inter_steps.append(wireA[pos] + steps)
 
 # output
