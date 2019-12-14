@@ -3,8 +3,6 @@ import os
 sys.path.append(os.getcwd() + "/..")
 from Intcode_computer import *
 from Geometry import *
-import re
-import math
 
 class Tile(IntEnum):
     empty = 0
