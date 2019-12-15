@@ -93,3 +93,7 @@ class program:
     def exec(self):
         while self.opcode != 99:
             self.step()
+
+    def exec_until_input(self):
+        while self.opcode != 99 and self.opcode != 3:
+            self.step()
