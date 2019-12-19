@@ -21,3 +21,7 @@ Two modules for help: [Geometry.py](/Geometry.py), [Intcode_computer.py](/Intcod
 | 13  | [Care Package](https://adventofcode.com/2019/day/13)                      | [AoC2019_13.py](/Day13/AoC2019_13.py)                                     |
 | 14  | [Space Stoichiometry](https://adventofcode.com/2019/day/14)               | [AoC2019_14.py](/Day14/AoC2019_14.py)                                     |
 | 15  | [Oxygen System](https://adventofcode.com/2019/day/15)                     | [AoC2019_15.py](/Day15/AoC2019_15.py)                                     |
+| 16  | [Flawed Frequency Transmission](https://adventofcode.com/2019/day/16)     | [AoC2019_16.py](/Day15/AoC2019_16.py)                                     |
+| 17  | [Set and Forget](https://adventofcode.com/2019/day/17)                    | [AoC2019_17.py](/Day15/AoC2019_17.py)                                     |
+| 18  | [Many-Worlds Interpretation](https://adventofcode.com/2019/day/18)        | [AoC2019_18.py](/Day15/AoC2019_18.py)                                     |
+| 19  | [Tractor Beam](https://adventofcode.com/2019/day/19)                      | [AoC2019_19.py](/Day15/AoC2019_19.py)                                     |
