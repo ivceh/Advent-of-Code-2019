@@ -1,3 +1,5 @@
+from collections import deque
+
 def instruction_modes(instruction):
     opcode = instruction % 100
     instruction //= 100
@@ -97,3 +99,14 @@ class program:
     def exec_until_input(self):
         while self.opcode != 99 and self.opcode != 3:
             self.step()
+
+inputQ = deque()
+def input_from_queue(Q = inputQ):
+    def in_func():
+        return Q.popleft()
+    return in_func
+
+def output_to_queue(Q = inputQ):
+    def out_func(x):
+        Q.append(x)
+    return out_func

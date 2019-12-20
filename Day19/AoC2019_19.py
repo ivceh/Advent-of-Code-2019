@@ -9,38 +9,20 @@ from itertools import count
 with open("input.txt", "r") as file:
     A = [int(a) for a in file.read().split(",")]
 
-class State(IntEnum):
-    X = 0
-    Y = 1
-
-def other_state(s):
-    return State(1 - s)
-
-state = State.X
-x = 0
-y = 0
-def in_func():
-    global state, x, y, s
-    if state == State.X:
-        retval = x
-    else:
-        retval = y
-    state = other_state(state)
-    return retval
-
 def out_func(x):
     global s
     s = bool(x)
 
 grid = {}
 def value(point):
+    #if point.x % 10 == point.y % 10 == 0:
+    #    print(point)
     if point in grid:
         return grid[point]
     else:
-        global x, y
-        x = point.x
-        y = point.y
-        p = program(A, in_func, out_func)
+        inputQ.append(point.x)
+        inputQ.append(point.y)
+        p = program(A, input_from_queue(), out_func)
         p.exec()
         grid[point] = s
         return s
