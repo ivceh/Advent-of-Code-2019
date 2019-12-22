@@ -27,3 +27,4 @@ Two modules for help: [Geometry.py](/Geometry.py), [Intcode_computer.py](/Intcod
 | 19  | [Tractor Beam](https://adventofcode.com/2019/day/19)                      | [AoC2019_19.py](/Day19/AoC2019_19.py)                                     |
 | 20  | [Donut Maze](https://adventofcode.com/2019/day/20)                        | [AoC2019_20.py](/Day20/AoC2019_20.py)                                     |
 | 21  | [Springdroid Adventure](https://adventofcode.com/2019/day/21)             | [AoC2019_21.py](/Day21/AoC2019_21.py)                                     |
+| 22  | [Slam Shuffle](https://adventofcode.com/2019/day/22)                      | [AoC2019_22.py](/Day22/AoC2019_22.py)                                     |
