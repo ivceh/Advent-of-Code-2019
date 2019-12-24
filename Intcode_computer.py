@@ -92,12 +92,15 @@ class program:
             raise ValueError("Invalid opcode {}!".format(self.opcode))
         self.get_opcode_modes()
 
+    def finished(self):
+        return self.opcode == 99
+
     def exec(self):
-        while self.opcode != 99:
+        while not self.finished():
             self.step()
 
     def exec_until_input(self):
-        while self.opcode != 99 and self.opcode != 3:
+        while not self.finished() and self.opcode != 3:
             self.step()
 
 inputQ = deque()

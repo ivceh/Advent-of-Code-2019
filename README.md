@@ -28,3 +28,5 @@ Two modules for help: [Geometry.py](/Geometry.py), [Intcode_computer.py](/Intcod
 | 20  | [Donut Maze](https://adventofcode.com/2019/day/20)                        | [AoC2019_20.py](/Day20/AoC2019_20.py)                                     |
 | 21  | [Springdroid Adventure](https://adventofcode.com/2019/day/21)             | [AoC2019_21.py](/Day21/AoC2019_21.py)                                     |
 | 22  | [Slam Shuffle](https://adventofcode.com/2019/day/22)                      | [AoC2019_22.py](/Day22/AoC2019_22.py)                                     |
+| 23  | [Category Six](https://adventofcode.com/2019/day/23)                      | [AoC2019_23.py](/Day23/AoC2019_23.py)                                     |
+| 24  | [Planet of Discord](https://adventofcode.com/2019/day/24)                 | [AoC2019_24.py](/Day24/AoC2019_24.py)                                     |
